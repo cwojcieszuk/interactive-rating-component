@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-grey: hsl(217, 12%, 63%);
+    --neutral-medium-grey: hsl(216, 12%, 54%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-blue: hsl(216, 12%, 8%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--neutral-very-blue);
+    overflow: hidden;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: var(--neutral-white);
+    max-width: 370px;
+    background: var(--neutral-dark-blue);
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.card .card-icon {
+    padding: 1rem;
+}
+
+.card .card-icon > img {
+    background: var(--neutral-very-blue);
+    border-radius: 100%;
+    padding: 1rem;
+    opacity: .5;
+}
+
+.card .card-content {
+    padding: 1rem;
+}
+
+.card .card-content > p {
+    font-weight: 400;
+    color: var(--neutral-light-grey);
+    font-size: 15px;
+    margin-top: .5rem;
+}
+
+.card .card-numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card .card-numbers > button {
+    border: none;
+    outline: none;
+    padding: .5rem;
+    border-radius: 100%;
+    padding: 1rem;
+    color: var(--neutral-white);
+    background: var(--neutral-very-blue);
+    opacity: .5;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.active {
+    background: var(--neutral-light-grey) !important;
+    opacity: 1 !important;
+}
+
+.card .card-submit {
+    padding: 1rem;
+    display: flex;
+}
+
+.card .submit-button {
+    padding-block: .5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    flex-basis: 100%;
+    color: var(--neutral-white);
+    background: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.card .card-numbers > button:hover {
+    background: var(--primary);
+    opacity: 1;
+}
+
+
+.card .submit-button:hover {
+    background: var(--neutral-white);
+    color: var(--primary);
+}
+
+.inactive-card {
+    transform: translateX(500%);
+    transition: none;
+    display: none !important;
+}
+
+.thank-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.thank-card .thank-card-select  {
+    color: var(--primary);
+    background: var(--neutral-very-blue);
+    opacity: .8;
+    padding: .7rem;
+    margin-block: 1rem;
+    border-radius: 1rem;
+}
+
+.thank-card .thank-card-content > p {
+    font-weight: 400;
+    color: var(--neutral-light-grey);
+    font-size: 15px;
+    margin-top: .5rem;
+}

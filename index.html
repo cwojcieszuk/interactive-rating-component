@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+
+  <div class="card">
+    <div class="card-icon">
+      <img src="./images/icon-star.svg" alt="">
+    </div>
+    <div class="card-content">
+      <h1>How did we do?</h1>
+
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+    </div>
+    <div class="card-numbers">
+      <button id="1" onclick="onButtonClick(this.id)">1</button>
+      <button id="2" onclick="onButtonClick(this.id)">2</button>
+      <button id="3" onclick="onButtonClick(this.id)">3</button>
+      <button id="4" onclick="onButtonClick(this.id)">4</button>
+      <button id="5" onclick="onButtonClick(this.id)">5</button>
+    </div>
+    <div class="card-submit">
+      <button class="submit-button" onclick="onSubmit()">Submit</button>
+    </div>
+  </div>
+
+  <div class="card thank-card inactive-card">
+    <div class="thank-card-icon">
+      <img src="./images/illustration-thank-you.svg" alt="">
+    </div>
+    <div class="thank-card-select">
+      <span id="select-value">You selected</span>
+    </div>
+    <div class="thank-card-content">
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+    </div>
+  </div>
+  
+
+
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <!-- You selected  out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch! -->
+
+  <script src="index.js"></script>
+</body>
+</html>
